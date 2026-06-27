@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>jrlab-design — component preview</title>
+  <meta name="description" content="Muted-cyberpunk design system: tokens + core components." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Design tokens (raw RGB channels) mirrored from tokens/index.css.
+       Inlined so this preview is fully standalone (openable via file://). -->
+  <style>
+    :root {
+      --color-slate-50:248 250 252; --color-slate-100:241 245 249; --color-slate-200:226 232 240;
+      --color-slate-300:203 213 225; --color-slate-400:148 163 184; --color-slate-500:100 116 139;
+      --color-slate-600:71 85 105; --color-slate-700:51 65 85; --color-slate-800:30 41 59;
+      --color-slate-900:15 23 42; --color-slate-950:2 6 23;
+      --color-accent-50:240 253 250; --color-accent-100:204 251 241; --color-accent-200:153 246 228;
+      --color-accent-300:94 234 212; --color-accent-400:45 212 191; --color-accent-500:20 184 166;
+      --color-accent-600:13 148 136; --color-accent-700:15 118 110; --color-accent-800:17 94 89;
+      --color-accent-900:19 78 74; --color-accent-950:4 47 46;
+      --color-magenta-50:253 244 255; --color-magenta-100:250 232 255; --color-magenta-200:245 208 254;
+      --color-magenta-300:240 171 252; --color-magenta-400:232 121 249; --color-magenta-500:217 70 239;
+      --color-magenta-600:192 38 211; --color-magenta-700:162 28 175; --color-magenta-800:134 25 143;
+      --color-magenta-900:112 26 117; --color-magenta-950:74 4 78;
+      --color-success:16 185 129; --color-success-soft:209 250 229; --color-success-strong:6 95 70;
+      --color-warning:245 158 11; --color-warning-soft:254 243 199; --color-warning-strong:146 64 14;
+      --color-error:239 68 68; --color-error-soft:254 226 226; --color-error-strong:153 27 27;
+      --color-info:14 165 233; --color-info-soft:224 242 254; --color-info-strong:7 89 133;
+      --font-sans:'Inter',ui-sans-serif,system-ui,sans-serif;
+      --font-mono:'JetBrains Mono',ui-monospace,monospace;
+    }
+    body { font-family: var(--font-sans); }
+    code, .font-mono { font-family: var(--font-mono); }
+    /* Subtle muted-cyberpunk backdrop glow for the dark hero. */
+    .cyber-grid {
+      background-image:
+        radial-gradient(40rem 24rem at 15% -10%, rgb(var(--color-accent-500)/0.12), transparent 60%),
+        radial-gradient(36rem 22rem at 95% 0%, rgb(var(--color-magenta-500)/0.10), transparent 60%);
+    }
+  </style>
+
+  <!-- Tailwind Play CDN + token-bound theme (mirrors tailwind.config.js) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    const ramp = (name) => Object.fromEntries(
+      [50,100,200,300,400,500,600,700,800,900,950]
+        .map((s) => [s, `rgb(var(--color-${name}-${s}) / <alpha-value>)`])
+    );
+    const status = (name) => ({
+      DEFAULT: `rgb(var(--color-${name}) / <alpha-value>)`,
+      soft: `rgb(var(--color-${name}-soft) / <alpha-value>)`,
+      strong: `rgb(var(--color-${name}-strong) / <alpha-value>)`,
+    });
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            slate: ramp('slate'), accent: ramp('accent'), magenta: ramp('magenta'),
+            success: status('success'), warning: status('warning'),
+            error: status('error'), info: status('info'),
+          },
+          fontFamily: { sans: 'var(--font-sans)', mono: 'var(--font-mono)' },
+          maxWidth: { content: '72rem' },
+          boxShadow: {
+            'glow-accent': '0 0 0 1px rgb(var(--color-accent-500)/0.35), 0 0 22px -4px rgb(var(--color-accent-500)/0.55)',
+            'glow-magenta': '0 0 0 1px rgb(var(--color-magenta-500)/0.35), 0 0 22px -4px rgb(var(--color-magenta-500)/0.55)',
+          },
+        },
+      },
+    };
+    // Restore persisted theme before paint.
+    try {
+      if (localStorage.getItem('jrlab-theme') === 'dark') document.documentElement.classList.add('dark');
+    } catch (_) {}
+  </script>
+</head>
+
+<body class="bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+
+  <!-- NavBar -->
+  <nav class="sticky top-0 z-40 w-full border-b border-slate-200 bg-white/80 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
+    <div class="mx-auto flex h-16 max-w-content items-center justify-between px-4 sm:px-6">
+      <a href="#" class="flex items-center gap-2 text-lg font-semibold tracking-tight">
+        jr<span class="text-accent-500">lab</span><span class="text-slate-400 dark:text-slate-500">/design</span>
+      </a>
+      <div class="flex items-center gap-1 sm:gap-2">
+        <ul class="hidden items-center gap-1 sm:flex">
+          <li><a href="#buttons" class="rounded-md px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white">Buttons</a></li>
+          <li><a href="#badges" class="rounded-md px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white">Badges</a></li>
+          <li><a href="#cards" class="rounded-md px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white">Cards</a></li>
+          <li><a href="#palette" class="rounded-md px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white">Palette</a></li>
+        </ul>
+        <button id="themeToggle" type="button" aria-label="Toggle dark mode"
+          class="inline-flex h-9 w-9 items-center justify-center rounded-md text-slate-600 hover:bg-slate-100 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white">
+          <!-- icons swapped by JS -->
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="cyber-grid border-b border-slate-200 dark:border-slate-800">
+    <div class="mx-auto max-w-content px-4 py-16 sm:px-6">
+      <span class="inline-flex items-center gap-1.5 rounded-full bg-accent-500/10 px-2.5 py-0.5 text-xs font-medium text-accent-700 ring-1 ring-inset ring-accent-500/20 dark:text-accent-300">
+        <span class="h-1.5 w-1.5 rounded-full bg-accent-500"></span> design system · v0.1
+      </span>
+      <h1 class="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">jrlab-design</h1>
+      <p class="mt-3 max-w-prose text-lg text-slate-600 dark:text-slate-400">
+        Muted-cyberpunk component kit — slate anchor, teal accent, magenta highlight.
+        Clean, clinical, dual-mode. Built on React + Tailwind with portable CSS tokens.
+      </p>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-content space-y-16 px-4 py-16 sm:px-6">
+
+    <!-- Buttons -->
+    <section id="buttons">
+      <h2 class="text-2xl font-semibold tracking-tight">Button</h2>
+      <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Variants × sizes.</p>
+
+      <div class="mt-6 space-y-6 rounded-xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-900">
+        <!-- Variants -->
+        <div class="flex flex-wrap items-center gap-3">
+          <button class="inline-flex h-10 items-center justify-center gap-2 rounded-lg bg-accent-600 px-4 text-sm font-medium text-white shadow-sm transition-colors hover:bg-accent-500 active:bg-accent-700 dark:hover:shadow-glow-accent">Primary</button>
+          <button class="inline-flex h-10 items-center justify-center gap-2 rounded-lg border border-slate-200 bg-slate-100 px-4 text-sm font-medium text-slate-900 transition-colors hover:bg-slate-200 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:hover:bg-slate-700">Secondary</button>
+          <button class="inline-flex h-10 items-center justify-center gap-2 rounded-lg bg-transparent px-4 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800">Ghost</button>
+          <button class="inline-flex h-10 items-center justify-center gap-2 rounded-lg bg-error px-4 text-sm font-medium text-white shadow-sm transition-colors hover:bg-error/90">Danger</button>
+          <button disabled class="inline-flex h-10 items-center justify-center gap-2 rounded-lg bg-accent-600 px-4 text-sm font-medium text-white opacity-50 pointer-events-none">Disabled</button>
+        </div>
+        <!-- Sizes -->
+        <div class="flex flex-wrap items-center gap-3">
+          <button class="inline-flex h-8 items-center justify-center gap-2 rounded-lg bg-accent-600 px-3 text-sm font-medium text-white hover:bg-accent-500">Small</button>
+          <button class="inline-flex h-10 items-center justify-center gap-2 rounded-lg bg-accent-600 px-4 text-sm font-medium text-white hover:bg-accent-500">Medium</button>
+          <button class="inline-flex h-12 items-center justify-center gap-2 rounded-lg bg-accent-600 px-6 text-base font-medium text-white hover:bg-accent-500">Large</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Badges -->
+    <section id="badges">
+      <h2 class="text-2xl font-semibold tracking-tight">Badge</h2>
+      <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Semantic status pills.</p>
+
+      <div class="mt-6 flex flex-wrap items-center gap-3 rounded-xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-900">
+        <span class="inline-flex items-center gap-1.5 rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-700 ring-1 ring-inset ring-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:ring-slate-700">Default</span>
+        <span class="inline-flex items-center gap-1.5 rounded-full bg-success-soft px-2.5 py-0.5 text-xs font-medium text-success-strong ring-1 ring-inset ring-success/20 dark:bg-success/15 dark:text-success dark:ring-success/30"><span class="h-1.5 w-1.5 rounded-full bg-success"></span>Success</span>
+        <span class="inline-flex items-center gap-1.5 rounded-full bg-warning-soft px-2.5 py-0.5 text-xs font-medium text-warning-strong ring-1 ring-inset ring-warning/20 dark:bg-warning/15 dark:text-warning dark:ring-warning/30"><span class="h-1.5 w-1.5 rounded-full bg-warning"></span>Warning</span>
+        <span class="inline-flex items-center gap-1.5 rounded-full bg-error-soft px-2.5 py-0.5 text-xs font-medium text-error-strong ring-1 ring-inset ring-error/20 dark:bg-error/15 dark:text-error dark:ring-error/30"><span class="h-1.5 w-1.5 rounded-full bg-error"></span>Error</span>
+        <span class="inline-flex items-center gap-1.5 rounded-full bg-info-soft px-2.5 py-0.5 text-xs font-medium text-info-strong ring-1 ring-inset ring-info/20 dark:bg-info/15 dark:text-info dark:ring-info/30"><span class="h-1.5 w-1.5 rounded-full bg-info"></span>Info</span>
+      </div>
+    </section>
+
+    <!-- Cards -->
+    <section id="cards">
+      <h2 class="text-2xl font-semibold tracking-tight">Card</h2>
+      <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Surface with optional header / footer slots.</p>
+
+      <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Plain -->
+        <div class="overflow-hidden rounded-xl border border-slate-200 bg-white text-slate-900 shadow-sm dark:border-slate-800 dark:bg-slate-900 dark:text-slate-100">
+          <div class="px-5 py-4">
+            <p class="text-sm text-slate-600 dark:text-slate-400">A plain card. Body content only — no header or footer.</p>
+          </div>
+        </div>
+        <!-- Header + footer -->
+        <div class="overflow-hidden rounded-xl border border-slate-200 bg-white text-slate-900 shadow-sm dark:border-slate-800 dark:bg-slate-900 dark:text-slate-100">
+          <div class="border-b border-slate-200 px-5 py-4 dark:border-slate-800">
+            <h3 class="text-base font-semibold leading-tight">Cardiac output</h3>
+            <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Last 60 s window</p>
+          </div>
+          <div class="px-5 py-4">
+            <p class="font-mono text-3xl font-medium">4.9 <span class="text-base text-slate-500">L/min</span></p>
+            <div class="mt-3"><span class="inline-flex items-center gap-1.5 rounded-full bg-success-soft px-2.5 py-0.5 text-xs font-medium text-success-strong ring-1 ring-inset ring-success/20 dark:bg-success/15 dark:text-success dark:ring-success/30"><span class="h-1.5 w-1.5 rounded-full bg-success"></span>Within range</span></div>
+          </div>
+          <div class="border-t border-slate-200 bg-slate-50 px-5 py-4 dark:border-slate-800 dark:bg-slate-950/40">
+            <button class="inline-flex h-8 items-center justify-center gap-2 rounded-lg bg-accent-600 px-3 text-sm font-medium text-white hover:bg-accent-500">View detail</button>
+          </div>
+        </div>
+        <!-- Glow -->
+        <div class="overflow-hidden rounded-xl border border-slate-200 bg-white text-slate-900 shadow-sm dark:border-accent-500/40 dark:bg-slate-900 dark:text-slate-100 dark:shadow-glow-accent">
+          <div class="border-b border-slate-200 px-5 py-4 dark:border-slate-800">
+            <h3 class="text-base font-semibold leading-tight">Glow variant</h3>
+            <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Neon edge in dark mode</p>
+          </div>
+          <div class="px-5 py-4">
+            <p class="text-sm text-slate-600 dark:text-slate-400">Use <code class="rounded bg-slate-100 px-1 py-0.5 text-xs dark:bg-slate-800">glow</code> sparingly to spotlight a single surface.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Palette -->
+    <section id="palette">
+      <h2 class="text-2xl font-semibold tracking-tight">Palette</h2>
+      <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Token ramps. Toggle the theme to compare modes.</p>
+
+      <div class="mt-6 space-y-6">
+        <div>
+          <p class="mb-2 text-sm font-medium text-slate-500 dark:text-slate-400">Slate · anchor</p>
+          <div class="grid grid-cols-6 gap-1 sm:grid-cols-11">
+            <div class="h-12 rounded bg-slate-50 ring-1 ring-inset ring-slate-900/5"></div><div class="h-12 rounded bg-slate-100"></div><div class="h-12 rounded bg-slate-200"></div><div class="h-12 rounded bg-slate-300"></div><div class="h-12 rounded bg-slate-400"></div><div class="h-12 rounded bg-slate-500"></div><div class="h-12 rounded bg-slate-600"></div><div class="h-12 rounded bg-slate-700"></div><div class="h-12 rounded bg-slate-800"></div><div class="h-12 rounded bg-slate-900"></div><div class="h-12 rounded bg-slate-950"></div>
+          </div>
+        </div>
+        <div>
+          <p class="mb-2 text-sm font-medium text-slate-500 dark:text-slate-400">Accent · teal</p>
+          <div class="grid grid-cols-6 gap-1 sm:grid-cols-11">
+            <div class="h-12 rounded bg-accent-50"></div><div class="h-12 rounded bg-accent-100"></div><div class="h-12 rounded bg-accent-200"></div><div class="h-12 rounded bg-accent-300"></div><div class="h-12 rounded bg-accent-400"></div><div class="h-12 rounded bg-accent-500"></div><div class="h-12 rounded bg-accent-600"></div><div class="h-12 rounded bg-accent-700"></div><div class="h-12 rounded bg-accent-800"></div><div class="h-12 rounded bg-accent-900"></div><div class="h-12 rounded bg-accent-950"></div>
+          </div>
+        </div>
+        <div>
+          <p class="mb-2 text-sm font-medium text-slate-500 dark:text-slate-400">Magenta · highlight</p>
+          <div class="grid grid-cols-6 gap-1 sm:grid-cols-11">
+            <div class="h-12 rounded bg-magenta-50"></div><div class="h-12 rounded bg-magenta-100"></div><div class="h-12 rounded bg-magenta-200"></div><div class="h-12 rounded bg-magenta-300"></div><div class="h-12 rounded bg-magenta-400"></div><div class="h-12 rounded bg-magenta-500"></div><div class="h-12 rounded bg-magenta-600"></div><div class="h-12 rounded bg-magenta-700"></div><div class="h-12 rounded bg-magenta-800"></div><div class="h-12 rounded bg-magenta-900"></div><div class="h-12 rounded bg-magenta-950"></div>
+          </div>
+        </div>
+        <div>
+          <p class="mb-2 text-sm font-medium text-slate-500 dark:text-slate-400">Semantic</p>
+          <div class="grid grid-cols-2 gap-1 sm:grid-cols-4">
+            <div class="flex h-12 items-center justify-center rounded bg-success text-xs font-medium text-white">success</div>
+            <div class="flex h-12 items-center justify-center rounded bg-warning text-xs font-medium text-white">warning</div>
+            <div class="flex h-12 items-center justify-center rounded bg-error text-xs font-medium text-white">error</div>
+            <div class="flex h-12 items-center justify-center rounded bg-info text-xs font-medium text-white">info</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 dark:border-slate-800">
+    <div class="mx-auto max-w-content px-4 py-8 text-sm text-slate-500 sm:px-6 dark:text-slate-400">
+      jrlab-design · <span class="font-mono">Inter</span> + <span class="font-mono">JetBrains Mono</span> · light/dark via <code class="rounded bg-slate-100 px-1 py-0.5 text-xs dark:bg-slate-800">.dark</code> on &lt;html&gt;
+    </div>
+  </footer>
+
+  <script>
+    // Dark-mode toggle (mirrors components/NavBar.jsx useDarkMode).
+    const root = document.documentElement;
+    const btn = document.getElementById('themeToggle');
+    const SUN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>';
+    const MOON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+    function render() { btn.innerHTML = root.classList.contains('dark') ? SUN : MOON; }
+    btn.addEventListener('click', () => {
+      const dark = root.classList.toggle('dark');
+      try { localStorage.setItem('jrlab-theme', dark ? 'dark' : 'light'); } catch (_) {}
+      render();
+    });
+    render();
+  </script>
+</body>
+</html>

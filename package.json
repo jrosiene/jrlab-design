@@ -1,0 +1,38 @@
+{
+  "name": "jrlab-design",
+  "version": "0.1.0",
+  "description": "Muted-cyberpunk design system (tokens + React/Tailwind components) for jrlab.org projects.",
+  "private": true,
+  "type": "module",
+  "sideEffects": [
+    "*.css"
+  ],
+  "exports": {
+    ".": "./components/index.js",
+    "./components": "./components/index.js",
+    "./tailwind.config.js": "./tailwind.config.js",
+    "./tokens/index.css": "./tokens/index.css"
+  },
+  "files": [
+    "tokens",
+    "components",
+    "layouts",
+    "themes",
+    "tailwind.config.js",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "tailwindcss": ">=3.3"
+  },
+  "keywords": [
+    "design-system",
+    "react",
+    "tailwindcss",
+    "design-tokens",
+    "jrlab"
+  ],
+  "author": "Joel Rosiene",
+  "license": "UNLICENSED"
+}
