@@ -19,6 +19,10 @@ The system is built on three constraints: **two typefaces** (Inter for UI, JetBr
 
 ## Color palette
 
+![jrlab-design color palette](assets/palette.svg)
+
+<sub>Rendered from `tokens/` — regenerate with `npm run palette` after changing color tokens.</sub>
+
 ### Slate — neutral anchor
 
 The ground for all surfaces, text, and chrome. Pulled toward cool gray with the blue cast removed.

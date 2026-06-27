@@ -23,7 +23,8 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "palette": "node scripts/gen-palette.mjs"
   },
   "peerDependencies": {
     "react": ">=18",
