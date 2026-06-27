@@ -1,0 +1,52 @@
+/* ==========================================================================
+   jrlab-design — color ramps (base values)
+   --------------------------------------------------------------------------
+   Stored as raw RGB *channels* (e.g. "20 184 166") so opacity works via
+   rgb(var(--token) / <alpha>) in both Tailwind and plain CSS.
+
+   Aesthetic: muted / clinical cyberpunk.
+     Slate   — neutral navy anchor (chrome, text, surfaces)
+     Teal    — primary accent ("cyber-teal")
+     Magenta — secondary highlight, the one "neon" note (use sparingly)
+   ========================================================================== */
+
+:root {
+  /* ---- Neutral anchor: Slate (cool gray — low blue) -------------------- */
+  --color-slate-50:  250 250 251;
+  --color-slate-100: 244 244 246;
+  --color-slate-200: 229 229 233;
+  --color-slate-300: 212 213 217;
+  --color-slate-400: 161 162 168;
+  --color-slate-500: 113 114 121;
+  --color-slate-600: 82 83 90;
+  --color-slate-700: 62 63 70;
+  --color-slate-800: 38 39 44;
+  --color-slate-900: 22 23 27;
+  --color-slate-950: 10 10 13;
+
+  /* ---- Primary accent: Teal (blue-leaning cyber-teal) ------------------ */
+  --color-accent-50:  236 254 255;
+  --color-accent-100: 206 250 253;
+  --color-accent-200: 160 242 248;
+  --color-accent-300: 100 226 238;
+  --color-accent-400: 45 205 226;
+  --color-accent-500: 14 178 207;
+  --color-accent-600: 10 145 178;
+  --color-accent-700: 14 116 146;
+  --color-accent-800: 18 93 117;
+  --color-accent-900: 20 76 96;
+  --color-accent-950: 7 46 61;
+
+  /* ---- Secondary highlight: Violet-magenta (cool neon) ----------------- */
+  --color-magenta-50:  248 245 255;
+  --color-magenta-100: 240 232 255;
+  --color-magenta-200: 226 208 254;
+  --color-magenta-300: 203 171 252;
+  --color-magenta-400: 167 121 249;
+  --color-magenta-500: 142 70 240;
+  --color-magenta-600: 121 45 221;
+  --color-magenta-700: 101 32 185;
+  --color-magenta-800: 84 28 151;
+  --color-magenta-900: 70 28 122;
+  --color-magenta-950: 44 8 82;
+}

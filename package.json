@@ -1,0 +1,39 @@
+{
+  "name": "jrlab-design",
+  "version": "0.1.0",
+  "description": "jrlab design system — clinical nouveau-cyberpunk for analytics and case presentations",
+  "keywords": ["design-system", "react", "clinical", "jrlab"],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles.css": "./styles.css"
+  },
+  "files": [
+    "dist",
+    "styles.css",
+    "tokens"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "palette": "node scripts/gen-palette.mjs"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "tsup": "^8",
+    "typescript": "^5"
+  }
+}

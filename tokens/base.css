@@ -1,0 +1,19 @@
+/* ==========================================================================
+   jrlab-design — base / reset
+   Minimal sensible defaults for plain pages. Components don't depend on this.
+   ========================================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-color: rgb(var(--bg));
+  color: rgb(var(--fg));
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+code, kbd, samp, pre, .font-mono { font-family: var(--font-mono); }

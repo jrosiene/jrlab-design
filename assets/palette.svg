@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1292" height="574" viewBox="0 0 1292 574" role="img" aria-label="jrlab-design color palette">
+<rect width="1292" height="574" rx="14" fill="#16171B"/>
+<text x="32" y="54" font-family="-apple-system, 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif" font-size="22" font-weight="700" fill="#FAFAFB">jrlab-design · palette</text>
+<text x="32" y="74" font-family="-apple-system, 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif" font-size="13" fill="#A1A2A8">muted clinical cyberpunk — generated from tokens/</text>
+<text x="32" y="110" font-family="-apple-system, 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif" font-size="13" font-weight="600" fill="#FAFAFB">Slate</text>
+<text x="122" y="110" font-family="-apple-system, 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif" font-size="11" fill="#A1A2A8">neutral anchor</text>
+<rect x="32" y="118" width="92" height="54" rx="6" fill="#FAFAFB" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="40" y="135" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#0A0A0D">50</text>
+<text x="40" y="184" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#FAFAFB</text>
+<rect x="132" y="118" width="92" height="54" rx="6" fill="#F4F4F6" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="140" y="135" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#0A0A0D">100</text>
+<text x="140" y="184" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#F4F4F6</text>
+<rect x="232" y="118" width="92" height="54" rx="6" fill="#E5E5E9" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="240" y="135" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#0A0A0D">200</text>
+<text x="240" y="184" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#E5E5E9</text>
+<rect x="332" y="118" width="92" height="54" rx="6" fill="#D4D5D9" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="340" y="135" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#0A0A0D">300</text>
+<text x="340" y="184" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#D4D5D9</text>
+<rect x="432" y="118" width="92" height="54" rx="6" fill="#A1A2A8" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="440" y="135" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#0A0A0D">400</text>
+<text x="440" y="184" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#A1A2A8</text>
+<rect x="532" y="118" width="92" height="54" rx="6" fill="#717279" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="540" y="135" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#F4F4F6">500</text>
+<text x="540" y="184" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#717279</text>
+<rect x="632" y="118" width="92" height="54" rx="6" fill="#52535A" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="640" y="135" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#F4F4F6">600</text>
+<text x="640" y="184" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#52535A</text>
+<rect x="732" y="118" width="92" height="54" rx="6" fill="#3E3F46" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="740" y="135" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#F4F4F6">700</text>
+<text x="740" y="184" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#3E3F46</text>
+<rect x="832" y="118" width="92" height="54" rx="6" fill="#26272C" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="840" y="135" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#F4F4F6">800</text>
+<text x="840" y="184" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#26272C</text>
+<rect x="932" y="118" width="92" height="54" rx="6" fill="#16171B" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="940" y="135" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#F4F4F6">900</text>
+<text x="940" y="184" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#16171B</text>
+<rect x="1032" y="118" width="92" height="54" rx="6" fill="#0A0A0D" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="1040" y="135" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#F4F4F6">950</text>
+<text x="1040" y="184" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#0A0A0D</text>
+<text x="32" y="228" font-family="-apple-system, 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif" font-size="13" font-weight="600" fill="#FAFAFB">Teal</text>
+<text x="122" y="228" font-family="-apple-system, 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif" font-size="11" fill="#A1A2A8">primary accent</text>
+<rect x="32" y="236" width="92" height="54" rx="6" fill="#ECFEFF" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="40" y="253" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#0A0A0D">50</text>
+<text x="40" y="302" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#ECFEFF</text>
+<rect x="132" y="236" width="92" height="54" rx="6" fill="#CEFAFD" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="140" y="253" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#0A0A0D">100</text>
+<text x="140" y="302" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#CEFAFD</text>
+<rect x="232" y="236" width="92" height="54" rx="6" fill="#A0F2F8" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="240" y="253" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#0A0A0D">200</text>
+<text x="240" y="302" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#A0F2F8</text>
+<rect x="332" y="236" width="92" height="54" rx="6" fill="#64E2EE" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="340" y="253" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#0A0A0D">300</text>
+<text x="340" y="302" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#64E2EE</text>
+<rect x="432" y="236" width="92" height="54" rx="6" fill="#2DCDE2" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="440" y="253" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#0A0A0D">400</text>
+<text x="440" y="302" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#2DCDE2</text>
+<rect x="532" y="236" width="92" height="54" rx="6" fill="#0EB2CF" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="540" y="253" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#0A0A0D">500</text>
+<text x="540" y="302" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#0EB2CF</text>
+<rect x="632" y="236" width="92" height="54" rx="6" fill="#0A91B2" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="640" y="253" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#F4F4F6">600</text>
+<text x="640" y="302" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#0A91B2</text>
+<rect x="732" y="236" width="92" height="54" rx="6" fill="#0E7492" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="740" y="253" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#F4F4F6">700</text>
+<text x="740" y="302" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#0E7492</text>
+<rect x="832" y="236" width="92" height="54" rx="6" fill="#125D75" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="840" y="253" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#F4F4F6">800</text>
+<text x="840" y="302" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#125D75</text>
+<rect x="932" y="236" width="92" height="54" rx="6" fill="#144C60" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="940" y="253" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#F4F4F6">900</text>
+<text x="940" y="302" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#144C60</text>
+<rect x="1032" y="236" width="92" height="54" rx="6" fill="#072E3D" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="1040" y="253" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#F4F4F6">950</text>
+<text x="1040" y="302" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#072E3D</text>
+<text x="32" y="346" font-family="-apple-system, 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif" font-size="13" font-weight="600" fill="#FAFAFB">Magenta</text>
+<text x="122" y="346" font-family="-apple-system, 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif" font-size="11" fill="#A1A2A8">highlight · use sparingly</text>
+<rect x="32" y="354" width="92" height="54" rx="6" fill="#F8F5FF" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="40" y="371" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#0A0A0D">50</text>
+<text x="40" y="420" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#F8F5FF</text>
+<rect x="132" y="354" width="92" height="54" rx="6" fill="#F0E8FF" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="140" y="371" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#0A0A0D">100</text>
+<text x="140" y="420" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#F0E8FF</text>
+<rect x="232" y="354" width="92" height="54" rx="6" fill="#E2D0FE" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="240" y="371" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#0A0A0D">200</text>
+<text x="240" y="420" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#E2D0FE</text>
+<rect x="332" y="354" width="92" height="54" rx="6" fill="#CBABFC" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="340" y="371" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#0A0A0D">300</text>
+<text x="340" y="420" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#CBABFC</text>
+<rect x="432" y="354" width="92" height="54" rx="6" fill="#A779F9" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="440" y="371" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#0A0A0D">400</text>
+<text x="440" y="420" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#A779F9</text>
+<rect x="532" y="354" width="92" height="54" rx="6" fill="#8E46F0" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="540" y="371" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#F4F4F6">500</text>
+<text x="540" y="420" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#8E46F0</text>
+<rect x="632" y="354" width="92" height="54" rx="6" fill="#792DDD" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="640" y="371" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#F4F4F6">600</text>
+<text x="640" y="420" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#792DDD</text>
+<rect x="732" y="354" width="92" height="54" rx="6" fill="#6520B9" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="740" y="371" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#F4F4F6">700</text>
+<text x="740" y="420" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#6520B9</text>
+<rect x="832" y="354" width="92" height="54" rx="6" fill="#541C97" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="840" y="371" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#F4F4F6">800</text>
+<text x="840" y="420" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#541C97</text>
+<rect x="932" y="354" width="92" height="54" rx="6" fill="#461C7A" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="940" y="371" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#F4F4F6">900</text>
+<text x="940" y="420" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#461C7A</text>
+<rect x="1032" y="354" width="92" height="54" rx="6" fill="#2C0852" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="1040" y="371" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="600" fill="#F4F4F6">950</text>
+<text x="1040" y="420" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#A1A2A8">#2C0852</text>
+<text x="32" y="464" font-family="-apple-system, 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif" font-size="13" font-weight="600" fill="#FAFAFB">Semantic</text>
+<text x="122" y="464" font-family="-apple-system, 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif" font-size="11" fill="#A1A2A8">soft · base · strong</text>
+<rect x="32" y="472" width="92" height="54" rx="6" fill="#D1FAE5" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="40" y="518" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#0A0A0D">#D1FAE5</text>
+<rect x="132" y="472" width="92" height="54" rx="6" fill="#10B981" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="140" y="518" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#0A0A0D">#10B981</text>
+<rect x="232" y="472" width="92" height="54" rx="6" fill="#065F46" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="240" y="518" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#F4F4F6">#065F46</text>
+<text x="32" y="540" font-family="-apple-system, 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif" font-size="11" font-weight="600" fill="#FAFAFB">success</text>
+<rect x="344" y="472" width="92" height="54" rx="6" fill="#FEF3C7" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="352" y="518" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#0A0A0D">#FEF3C7</text>
+<rect x="444" y="472" width="92" height="54" rx="6" fill="#F59E0B" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="452" y="518" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#0A0A0D">#F59E0B</text>
+<rect x="544" y="472" width="92" height="54" rx="6" fill="#92400E" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="552" y="518" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#F4F4F6">#92400E</text>
+<text x="344" y="540" font-family="-apple-system, 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif" font-size="11" font-weight="600" fill="#FAFAFB">warning</text>
+<rect x="656" y="472" width="92" height="54" rx="6" fill="#FEE2E2" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="664" y="518" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#0A0A0D">#FEE2E2</text>
+<rect x="756" y="472" width="92" height="54" rx="6" fill="#EF4444" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="764" y="518" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#F4F4F6">#EF4444</text>
+<rect x="856" y="472" width="92" height="54" rx="6" fill="#991B1B" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="864" y="518" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#F4F4F6">#991B1B</text>
+<text x="656" y="540" font-family="-apple-system, 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif" font-size="11" font-weight="600" fill="#FAFAFB">error</text>
+<rect x="968" y="472" width="92" height="54" rx="6" fill="#E0F2FE" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="976" y="518" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#0A0A0D">#E0F2FE</text>
+<rect x="1068" y="472" width="92" height="54" rx="6" fill="#0EA5E9" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="1076" y="518" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#F4F4F6">#0EA5E9</text>
+<rect x="1168" y="472" width="92" height="54" rx="6" fill="#075985" stroke="#3E3F46" stroke-width="0.5"/>
+<text x="1176" y="518" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#F4F4F6">#075985</text>
+<text x="968" y="540" font-family="-apple-system, 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif" font-size="11" font-weight="600" fill="#FAFAFB">info</text>
+</svg>

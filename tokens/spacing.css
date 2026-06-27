@@ -1,0 +1,46 @@
+/* ==========================================================================
+   jrlab-design — spacing, radii, shadows, layout
+   --------------------------------------------------------------------------
+   4px base grid. Radii top out at ~1rem (xl) — surfaces are calm, not pill-y.
+   Shadows are soft + tight in light mode; dark mode adds optional "neon" glow
+   rings (use sparingly to spotlight a single surface).
+   ========================================================================== */
+
+:root {
+  /* ---- Spacing (4px grid) ---------------------------------------------- */
+  --space-0:  0;
+  --space-1:  0.25rem;  /*  4 */
+  --space-2:  0.5rem;   /*  8 */
+  --space-3:  0.75rem;  /* 12 */
+  --space-4:  1rem;     /* 16 */
+  --space-5:  1.25rem;  /* 20 */
+  --space-6:  1.5rem;   /* 24 */
+  --space-8:  2rem;     /* 32 */
+  --space-10: 2.5rem;   /* 40 */
+  --space-12: 3rem;     /* 48 */
+  --space-16: 4rem;     /* 64 */
+  --space-20: 5rem;     /* 80 */
+
+  /* ---- Radii ----------------------------------------------------------- */
+  --radius-sm:   0.25rem;  /* 4  — inputs, chips      */
+  --radius-md:   0.5rem;   /* 8  — buttons            */
+  --radius-lg:   0.75rem;  /* 12 — nested panels      */
+  --radius-xl:   1rem;     /* 16 — cards              */
+  --radius-full: 9999px;   /* pills, dots, avatars    */
+
+  /* ---- Shadows (soft, tight — light mode) ------------------------------ */
+  --shadow-sm: 0 1px 2px 0 rgb(var(--color-slate-900) / 0.05);
+  --shadow-md: 0 4px 12px -2px rgb(var(--color-slate-900) / 0.08),
+               0 2px 4px -2px rgb(var(--color-slate-900) / 0.06);
+  --shadow-lg: 0 12px 32px -8px rgb(var(--color-slate-900) / 0.18);
+
+  /* ---- Neon glow rings (dark mode spotlight) --------------------------- */
+  --glow-accent:  0 0 0 1px rgb(var(--color-accent-500) / 0.35),
+                  0 0 22px -4px rgb(var(--color-accent-500) / 0.55);
+  --glow-magenta: 0 0 0 1px rgb(var(--color-magenta-500) / 0.35),
+                  0 0 22px -4px rgb(var(--color-magenta-500) / 0.55);
+
+  /* ---- Layout ---------------------------------------------------------- */
+  --max-content: 72rem;  /* primary column   */
+  --max-prose:   65ch;   /* readable measure */
+}
